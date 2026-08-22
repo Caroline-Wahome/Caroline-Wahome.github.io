@@ -1,0 +1,14 @@
+title: "Dr. Caroline Wahome"
+description: "Environmental Microbiologist, Researcher and Lecturer"
+url: "https://caroline-wahome.github.io"
+
+author:
+  name: "Dr. Caroline Wahome"
+  email: "wahomecaroline81@gmail.com"
+
+permalink: /insights/:title/
+
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
