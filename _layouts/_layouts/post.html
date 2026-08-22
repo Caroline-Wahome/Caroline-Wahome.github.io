@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ page.title }} | Dr. Caroline Wahome</title>
+
+    <meta name="description" content="{{ page.title }}">
+
+    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+
+    <style>
+
+        .blog-header {
+            background: linear-gradient(135deg, #123B5D, #2E7D6B);
+            color: white;
+            padding: 70px 8%;
+        }
+
+        .blog-header-content {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .blog-header h1 {
+            font-size: 44px;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .blog-date {
+            color: #D8EFE9;
+            font-weight: bold;
+        }
+
+        .blog-content {
+            max-width: 900px;
+            margin: auto;
+            padding: 60px 8%;
+            background: white;
+        }
+
+        .blog-content img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 25px 0;
+        }
+
+        .blog-content h2 {
+            margin-top: 40px;
+        }
+
+        .blog-content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #2E7D6B;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+<nav>
+
+    <div class="logo">
+        Dr. Caroline Wahome
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="{{ '/' | relative_url }}">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="{{ '/insights.html' | relative_url }}">
+                Insights
+            </a>
+        </li>
+
+        <li>
+            <a href="{{ '/#research' | relative_url }}">
+                Research
+            </a>
+        </li>
+
+        <li>
+            <a href="{{ '/#contact' | relative_url }}">
+                Contact
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+<section class="blog-header">
+
+    <div class="blog-header-content">
+
+        <div class="blog-date">
+            {{ page.date | date: "%d %B %Y" }}
+        </div>
+
+        <h1>
+            {{ page.title }}
+        </h1>
+
+    </div>
+
+</section>
+
+
+<main class="blog-content">
+
+    <a
+        href="{{ '/insights.html' | relative_url }}"
+        class="back-link"
+    >
+        ← Back to Insights
+    </a>
+
+
+    <article>
+
+        {{ content }}
+
+    </article>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 Dr. Caroline Wahome
+    </p>
+
+    <p>
+        Environmental Microbiologist | Researcher | Lecturer
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
