@@ -2,6 +2,7 @@
 layout: post
 title: "Hands-on Climate-Smart Agriculture: Lessons from Farm Management, Resource Efficiency and Farmer Engagement"
 date: 2026-08-22
+permalink: /insights/climate-smart-agriculture/
 ---
 
 # Hands-on Climate-Smart Agriculture: Lessons from Farm Management, Resource Efficiency and Farmer Engagement
