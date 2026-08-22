@@ -318,11 +318,8 @@ h2 {
 
 .blog-card img {
     width: 100%;
-    height: auto;
-    max-height: 350px;
-    object-fit: contain;
-    border-radius: 8px;
-    display: block;
+    height: 200px;
+    object-fit: cover;
 }
 
 .blog-content {
