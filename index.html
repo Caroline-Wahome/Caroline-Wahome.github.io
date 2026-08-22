@@ -1,571 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Dr. Caroline Wahome | Environmental Microbiologist & Sustainability Researcher</title>
 
-    <meta name="description" content="Professional academic and research profile of Dr. Caroline Wahome, environmental microbiologist, researcher and lecturer working across climate-smart agriculture, environmental sustainability, soil health and environmental monitoring.">
+    <meta name="description"
+          content="Professional academic and research profile of Dr. Caroline Wahome, Environmental Microbiologist, researcher and lecturer working across environmental microbiology, sustainable agriculture, soil health, environmental monitoring and climate resilience.">
 
     <meta name="author" content="Dr. Caroline Wahome">
 
-    <style>
+    <!-- Main Website Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 
-        /* ==============================
-           COLOUR PALETTE
-        ============================== */
-
-        :root {
-            --navy: #123B5D;
-            --blue: #1E5A7A;
-            --green: #2E7D6B;
-            --light-green: #EAF4F1;
-            --gold: #C89B3C;
-            --light: #F6F8F8;
-            --dark: #263238;
-            --grey: #64748B;
-            --white: #FFFFFF;
-        }
-
-        /* ==============================
-           GENERAL
-        ============================== */
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            color: var(--dark);
-            background: var(--white);
-            line-height: 1.7;
-        }
-
-        a {
-            color: var(--green);
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: var(--navy);
-        }
-
-        section {
-            padding: 75px 8%;
-        }
-
-        .container {
-            max-width: 1150px;
-            margin: auto;
-        }
-
-        h2 {
-            color: var(--navy);
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-
-        .section-intro {
-            max-width: 850px;
-            color: var(--grey);
-            margin-bottom: 35px;
-        }
-
-        /* ==============================
-           NAVIGATION
-        ============================== */
-
-        nav {
-            background: var(--navy);
-            padding: 17px 7%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav .logo {
-            color: var(--white);
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 22px;
-        }
-
-        nav ul li a {
-            color: var(--white);
-            font-size: 14px;
-        }
-
-        nav ul li a:hover {
-            color: #A9DED1;
-        }
-
-        /* ==============================
-           HERO
-        ============================== */
-
-        .hero {
-            background: linear-gradient(135deg, var(--navy), var(--green));
-            color: var(--white);
-            padding: 90px 8%;
-        }
-
-        .hero-content {
-            max-width: 1150px;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 60px;
-        }
-
-        .hero-text {
-            max-width: 760px;
-        }
-
-        .hero h1 {
-            font-size: 52px;
-            line-height: 1.15;
-            margin-bottom: 15px;
-        }
-
-        .hero h3 {
-            font-size: 23px;
-            font-weight: normal;
-            color: #D8EFE9;
-            margin-bottom: 25px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-
-        .profile-photo {
-            width: 240px;
-            height: 240px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 6px solid var(--white);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-
-        .buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 12px 22px;
-            background: var(--white);
-            color: var(--navy);
-            border-radius: 5px;
-            font-weight: bold;
-        }
-
-        .button:hover {
-            background: #D8EFE9;
-            color: var(--navy);
-        }
-
-        .button-outline {
-            background: transparent;
-            color: var(--white);
-            border: 1px solid var(--white);
-        }
-
-        .button-outline:hover {
-            background: var(--white);
-            color: var(--navy);
-        }
-
-        /* ==============================
-           ABOUT
-        ============================== */
-
-        .about {
-            background: var(--white);
-        }
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 50px;
-            align-items: start;
-        }
-
-        .profile-summary {
-            font-size: 17px;
-        }
-
-        .profile-box {
-            background: var(--light-green);
-            padding: 30px;
-            border-radius: 10px;
-            border-left: 5px solid var(--green);
-        }
-
-        .profile-box h3 {
-            color: var(--navy);
-            margin-bottom: 15px;
-        }
-
-        .profile-box p {
-            margin-bottom: 10px;
-        }
-
-        /* ==============================
-           CORE COMPETENCIES
-        ============================== */
-
-        .competencies {
-            background: var(--light);
-        }
-
-        .competency-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 18px;
-        }
-
-        .competency {
-            background: var(--white);
-            padding: 20px;
-            border-radius: 8px;
-            border-top: 3px solid var(--green);
-        }
-
-        .competency h3 {
-            color: var(--navy);
-            font-size: 17px;
-        }
-
-        /* ==============================
-           RESEARCH
-        ============================== */
-
-        .research-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
-        }
-
-        .research-card {
-            padding: 30px;
-            background: var(--light-green);
-            border-radius: 10px;
-        }
-
-        .research-card h3 {
-            color: var(--navy);
-            margin-bottom: 12px;
-            font-size: 21px;
-        }
-
-        /* ==============================
-           EXPERIENCE
-        ============================== */
-
-        .experience {
-            background: var(--light);
-        }
-
-        .timeline {
-            border-left: 3px solid var(--green);
-            padding-left: 30px;
-        }
-
-        .job {
-            margin-bottom: 35px;
-        }
-
-        .job h3 {
-            color: var(--navy);
-            font-size: 20px;
-        }
-
-        .job .date {
-            color: var(--green);
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        .job ul {
-            margin-top: 10px;
-            padding-left: 20px;
-        }
-
-        /* ==============================
-           PUBLICATIONS
-        ============================== */
-
-        .publication {
-            margin-bottom: 28px;
-            padding-bottom: 22px;
-            border-bottom: 1px solid #D9E0E3;
-        }
-
-        .publication h3 {
-            color: var(--navy);
-            font-size: 18px;
-            margin-bottom: 8px;
-        }
-
-        .publication p {
-            color: var(--dark);
-        }
-
-        .doi {
-            display: inline-block;
-            margin-top: 6px;
-            font-size: 14px;
-            font-weight: bold;
-        }
-
-        /* ==============================
-           CONTRIBUTIONS
-        ============================== */
-
-        .contributions {
-            background: var(--light);
-        }
-
-        .contribution {
-            background: var(--white);
-            padding: 20px;
-            margin-bottom: 15px;
-            border-left: 4px solid var(--gold);
-        }
-
-        .contribution strong {
-            color: var(--navy);
-        }
-
-        /* ==============================
-           EDUCATION
-        ============================== */
-
-        .education-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-        }
-
-        .education-card {
-            padding: 25px;
-            background: var(--light-green);
-            border-radius: 8px;
-        }
-
-        .education-card .year {
-            color: var(--green);
-            font-weight: bold;
-        }
-
-        .education-card h3 {
-            color: var(--navy);
-            margin-top: 8px;
-        }
-
-        /* ==============================
-           PROFESSIONAL DEVELOPMENT
-        ============================== */
-
-        .training-list {
-            columns: 2;
-            column-gap: 50px;
-        }
-
-        .training-list li {
-            margin-bottom: 12px;
-            break-inside: avoid;
-        }
-
-        /* ==============================
-           MEMBERSHIPS
-        ============================== */
-
-        .membership {
-            display: inline-block;
-            background: var(--light-green);
-            padding: 15px 22px;
-            margin: 8px;
-            border-radius: 6px;
-            color: var(--navy);
-            font-weight: bold;
-        }
-
-        /* ==============================
-           CONTACT
-        ============================== */
-
-        .contact {
-            background: var(--navy);
-            color: var(--white);
-        }
-
-        .contact h2 {
-            color: var(--white);
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-        }
-
-        .contact-card {
-            background: rgba(255,255,255,0.08);
-            padding: 25px;
-            border-radius: 8px;
-        }
-
-        .contact-card strong {
-            color: #A9DED1;
-        }
-
-        .contact a {
-            color: #A9DED1;
-            word-break: break-word;
-        }
-
-        /* ==============================
-           FOOTER
-        ============================== */
-
-        footer {
-            background: #0B293F;
-            color: #CBD5DB;
-            text-align: center;
-            padding: 30px;
-            font-size: 14px;
-        }
-
-        /* ==============================
-           MOBILE
-        ============================== */
-
-        @media (max-width: 850px) {
-
-            nav {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            nav ul {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .hero-content {
-                flex-direction: column-reverse;
-                text-align: center;
-            }
-
-            .hero h1 {
-                font-size: 38px;
-            }
-
-            .buttons {
-                justify-content: center;
-            }
-
-            .about-grid,
-            .research-grid,
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .competency-grid,
-            .education-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .training-list {
-                columns: 1;
-            }
-        }
-
-    </style>
 </head>
+
 
 <body>
 
-<!-- ==============================
+
+<!-- =========================================
      NAVIGATION
-============================== -->
+========================================= -->
 
-<nav>
+<nav class="site-nav">
 
-    <div class="logo">
-        Dr. Caroline Wahome
+    <div class="nav-container">
+
+        <div class="logo">
+            Dr. Caroline Wahome
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="research.html">Research</a>
+            </li>
+
+            <li>
+                <a href="impact.html">Impact</a>
+            </li>
+
+            <li>
+                <a href="publications.html">Publications</a>
+            </li>
+
+            <li>
+                <a href="insights.html">Insights</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
     </div>
-
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
 
 </nav>
 
 
-<!-- ==============================
-     HERO
-============================== -->
 
-<section class="hero">
+<!-- =========================================
+     HERO
+========================================= -->
+
+<header class="hero">
 
     <div class="hero-content">
 
         <div class="hero-text">
 
-            <h1>Dr. Caroline Wahome</h1>
+            <h1>
+                Dr. Caroline Wahome
+            </h1>
 
             <h3>
                 Environmental Microbiologist | Researcher | Lecturer
             </h3>
 
             <p>
-                Multidisciplinary researcher working at the intersection
-                of microbiology, climate-smart agriculture, environmental
-                sustainability, natural resource management and environmental
-                monitoring.
+                Microbiologist and multidisciplinary researcher working
+                across environmental microbiology, sustainable agriculture,
+                soil health, environmental monitoring and climate-resilient
+                development.
             </p>
 
             <div class="buttons">
 
-                <a href="#research" class="button">
+                <a href="research.html" class="button">
                     Explore My Research
                 </a>
 
-                <a href="#contact" class="button button-outline">
-                    Get in Touch
+                <a href="impact.html" class="button button-outline">
+                    Research in Action
                 </a>
 
             </div>
 
         </div>
+
 
         <img
             src="profile%20new.png"
@@ -575,12 +121,13 @@
 
     </div>
 
-</section>
+</header>
 
 
-<!-- ==============================
+
+<!-- =========================================
      ABOUT
-============================== -->
+========================================= -->
 
 <section id="about" class="about">
 
@@ -596,29 +143,29 @@
                     I am a microbiologist and researcher with over 10 years
                     of experience delivering multidisciplinary research,
                     technical advisory, stakeholder engagement and
-                    capacity-building initiatives across climate-smart
-                    agriculture, environmental sustainability, natural
+                    capacity-building initiatives across environmental
+                    sustainability, climate-smart agriculture, natural
                     resource management and environmental monitoring.
                 </p>
 
                 <br>
 
                 <p>
-                    My work brings together scientific research, stakeholder
-                    engagement and practical innovation to support sustainable
-                    and climate-resilient land-use solutions. I have worked
-                    with academic institutions, farming communities,
-                    development partners and cross-sector stakeholders
-                    in Kenya and internationally.
+                    My work brings together environmental microbiology,
+                    agricultural systems, environmental monitoring and
+                    stakeholder engagement to develop practical approaches
+                    for sustainable and climate-resilient development.
                 </p>
 
                 <br>
 
                 <p>
-                    I am particularly interested in translating scientific
-                    evidence into practical interventions that contribute
-                    to sustainable development, strengthen research impact
-                    and support climate-positive innovation.
+                    I have worked with academic institutions, farming
+                    communities, development partners and cross-sector
+                    stakeholders in Kenya and internationally. I am
+                    particularly interested in translating scientific
+                    evidence into practical interventions that support
+                    sustainable development and climate-positive innovation.
                 </p>
 
             </div>
@@ -652,9 +199,10 @@
 </section>
 
 
-<!-- ==============================
+
+<!-- =========================================
      CORE COMPETENCIES
-============================== -->
+========================================= -->
 
 <section class="competencies">
 
@@ -663,6 +211,10 @@
         <h2>Core Competencies</h2>
 
         <div class="competency-grid">
+
+            <div class="competency">
+                <h3>Environmental Microbiology</h3>
+            </div>
 
             <div class="competency">
                 <h3>Climate Change Adaptation & Resilience</h3>
@@ -678,6 +230,10 @@
 
             <div class="competency">
                 <h3>Sustainability & Sustainable Development</h3>
+            </div>
+
+            <div class="competency">
+                <h3>Soil Health</h3>
             </div>
 
             <div class="competency">
@@ -704,14 +260,6 @@
                 <h3>Cross-Sector Collaboration</h3>
             </div>
 
-            <div class="competency">
-                <h3>Technical Report Writing</h3>
-            </div>
-
-            <div class="competency">
-                <h3>Workshop Facilitation & Public Engagement</h3>
-            </div>
-
         </div>
 
     </div>
@@ -719,33 +267,39 @@
 </section>
 
 
-<!-- ==============================
+
+<!-- =========================================
      RESEARCH
-============================== -->
+========================================= -->
 
 <section id="research">
 
     <div class="container">
 
-        <h2>Research Areas</h2>
+        <h2>Research</h2>
 
         <p class="section-intro">
-            My research is multidisciplinary and focuses on understanding
-            environmental and agricultural systems while developing
-            practical approaches for sustainable and climate-resilient
-            development.
+            My research brings together microbiology, environmental
+            monitoring, agricultural systems and sustainability to address
+            challenges affecting soils, crops, farming communities and
+            environmental resilience.
         </p>
+
 
         <div class="research-grid">
 
+
             <div class="research-card">
 
-                <h3>Environmental Microbiology</h3>
+                <h3>
+                    Environmental Microbiology
+                </h3>
 
                 <p>
                     Investigating microorganisms and microbial communities
-                    within environmental and agricultural systems and their
-                    implications for ecosystem functioning and sustainability.
+                    within environmental and agricultural systems and
+                    exploring their roles in ecosystem functioning,
+                    sustainability and environmental health.
                 </p>
 
             </div>
@@ -753,12 +307,14 @@
 
             <div class="research-card">
 
-                <h3>Soil Health & Environmental Monitoring</h3>
+                <h3>
+                    Soil Health & Environmental Monitoring
+                </h3>
 
                 <p>
                     Developing accessible approaches for soil monitoring
-                    and environmental assessment, including the development
-                    of zero-waste biosensors for environmental monitoring
+                    and environmental assessment, including zero-waste
+                    biosensor technologies for environmental monitoring
                     in soils.
                 </p>
 
@@ -767,12 +323,15 @@
 
             <div class="research-card">
 
-                <h3>Climate-Smart Agriculture</h3>
+                <h3>
+                    Sustainable Agriculture
+                </h3>
 
                 <p>
-                    Researching sustainable agricultural approaches that
-                    strengthen resilience, support smallholder farmers and
-                    contribute to climate-positive land-use systems.
+                    Researching sustainable agricultural practices,
+                    beneficial microorganisms, crop production systems
+                    and approaches that support productive and resilient
+                    farming systems.
                 </p>
 
             </div>
@@ -780,12 +339,14 @@
 
             <div class="research-card">
 
-                <h3>Sustainable Agricultural Systems</h3>
+                <h3>
+                    Climate-Smart Agriculture
+                </h3>
 
                 <p>
-                    Exploring beneficial microorganisms, sustainable crop
-                    production, low-cost technologies and approaches that
-                    improve agricultural productivity and sustainability.
+                    Exploring approaches that strengthen agricultural
+                    resilience, support smallholder farmers and contribute
+                    to sustainable and climate-positive land-use systems.
                 </p>
 
             </div>
@@ -793,12 +354,15 @@
 
             <div class="research-card">
 
-                <h3>Natural Resource Management</h3>
+                <h3>
+                    Beneficial Microorganisms & Crop Systems
+                </h3>
 
                 <p>
-                    Supporting sustainable management of land and natural
-                    resources through interdisciplinary research and
-                    stakeholder-driven approaches.
+                    Research on beneficial microorganisms, arbuscular
+                    mycorrhizal fungi, tissue culture technologies and
+                    microbial communities associated with agricultural
+                    production systems.
                 </p>
 
             </div>
@@ -806,119 +370,215 @@
 
             <div class="research-card">
 
-                <h3>Science, Innovation & Public Engagement</h3>
+                <h3>
+                    Science, Innovation & Public Engagement
+                </h3>
 
                 <p>
-                    Connecting scientific research with communities,
-                    policymakers and wider audiences through engagement,
-                    capacity building and accessible science communication.
+                    Connecting scientific research with farmers,
+                    communities, institutions and wider audiences through
+                    stakeholder engagement, capacity building and accessible
+                    science communication.
                 </p>
 
             </div>
 
         </div>
 
+
+        <a href="research.html" class="button">
+            Explore Research & Projects
+        </a>
+
     </div>
 
 </section>
 
 
-<!-- ==============================
+
+<!-- =========================================
      EXPERIENCE
-============================== -->
+========================================= -->
 
 <section id="experience" class="experience">
 
     <div class="container">
 
-        <h2>Academic & Professional Experience</h2>
+        <h2>
+            Academic & Professional Experience
+        </h2>
+
 
         <div class="timeline">
 
 
             <div class="job">
 
-                <div class="date">March 2026 – Present</div>
+                <div class="date">
+                    March 2026 – Present
+                </div>
 
-                <h3>Adjunct Lecturer — Kenyatta University</h3>
-
-                <p>
-                    Department of Biochemistry, Microbiology & Biotechnology
-                </p>
-
-                <ul>
-                    <li>Delivers undergraduate microbiology course content and practical laboratory instruction.</li>
-                    <li>Provides academic and professional mentorship to undergraduate students.</li>
-                    <li>Supervises and evaluates undergraduate research projects and laboratory experiments.</li>
-                </ul>
-
-            </div>
-
-
-            <div class="job">
-
-                <div class="date">November 2025 – Present</div>
-
-                <h3>Honorary Research Fellow — University of Strathclyde</h3>
-
-                <p>
-                    Department of Civil & Environmental Engineering
-                </p>
-
-                <ul>
-                    <li>Contributes to collaborative international research and global grant applications.</li>
-                    <li>Provides specialist expertise to research proposals and funding bids.</li>
-                    <li>Collaborates on project development and peer-reviewed publications.</li>
-                    <li>Supports scientific exchange between Kenyatta University and the University of Strathclyde.</li>
-                </ul>
-
-            </div>
-
-
-            <div class="job">
-
-                <div class="date">October 2025 – Present</div>
-
-                <h3>Postdoctoral Researcher — Kenyatta University</h3>
+                <h3>
+                    Adjunct Lecturer — Kenyatta University
+                </h3>
 
                 <p>
                     Department of Biochemistry, Microbiology & Biotechnology
                 </p>
 
                 <ul>
-                    <li>Conducts research on zero-waste biosensors for environmental monitoring in soils.</li>
-                    <li>Conducts stakeholder engagement and interdisciplinary collaboration.</li>
-                    <li>Contributes to climate-positive land-use solutions, laboratory research and public engagement.</li>
+
+                    <li>
+                        Delivers undergraduate microbiology course content
+                        and practical laboratory instruction.
+                    </li>
+
+                    <li>
+                        Provides academic and professional mentorship to
+                        undergraduate students.
+                    </li>
+
+                    <li>
+                        Supervises and evaluates undergraduate research
+                        projects and laboratory experiments.
+                    </li>
+
                 </ul>
 
             </div>
 
 
+
             <div class="job">
 
-                <div class="date">October 2024 – September 2025</div>
+                <div class="date">
+                    November 2025 – Present
+                </div>
 
-                <h3>Postdoctoral Researcher — University of Strathclyde</h3>
+                <h3>
+                    Honorary Research Fellow — University of Strathclyde
+                </h3>
 
                 <p>
                     Department of Civil & Environmental Engineering
                 </p>
 
                 <ul>
-                    <li>Led development of zero-waste biosensors for environmental monitoring in soils.</li>
-                    <li>Conducted stakeholder engagement and interdisciplinary collaboration.</li>
-                    <li>Contributed to grant writing and project conceptualisation.</li>
-                    <li>Participated in laboratory research and public engagement activities.</li>
+
+                    <li>
+                        Contributes to collaborative international research
+                        and global grant applications.
+                    </li>
+
+                    <li>
+                        Provides specialist expertise to research proposals
+                        and funding bids.
+                    </li>
+
+                    <li>
+                        Collaborates on project development and
+                        peer-reviewed publications.
+                    </li>
+
+                    <li>
+                        Supports scientific exchange between Kenyatta
+                        University and the University of Strathclyde.
+                    </li>
+
                 </ul>
 
             </div>
 
 
+
             <div class="job">
 
-                <div class="date">2019 – 2024</div>
+                <div class="date">
+                    October 2025 – Present
+                </div>
 
-                <h3>Research Assistant — Kenyatta University</h3>
+                <h3>
+                    Postdoctoral Researcher — Kenyatta University
+                </h3>
+
+                <p>
+                    Department of Biochemistry, Microbiology & Biotechnology
+                </p>
+
+                <ul>
+
+                    <li>
+                        Conducts research on zero-waste biosensors for
+                        environmental monitoring in soils.
+                    </li>
+
+                    <li>
+                        Conducts stakeholder engagement and interdisciplinary
+                        collaboration.
+                    </li>
+
+                    <li>
+                        Contributes to climate-positive land-use solutions,
+                        laboratory research and public engagement.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="job">
+
+                <div class="date">
+                    October 2024 – September 2025
+                </div>
+
+                <h3>
+                    Postdoctoral Researcher — University of Strathclyde
+                </h3>
+
+                <p>
+                    Department of Civil & Environmental Engineering
+                </p>
+
+                <ul>
+
+                    <li>
+                        Led development of zero-waste biosensors for
+                        environmental monitoring in soils.
+                    </li>
+
+                    <li>
+                        Conducted stakeholder engagement and
+                        interdisciplinary collaboration.
+                    </li>
+
+                    <li>
+                        Contributed to grant writing and project
+                        conceptualisation.
+                    </li>
+
+                    <li>
+                        Participated in laboratory research and public
+                        engagement activities.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="job">
+
+                <div class="date">
+                    2019 – 2024
+                </div>
+
+                <h3>
+                    Research Assistant — Kenyatta University
+                </h3>
 
                 <p>
                     Plant Sciences Department & Department of Biochemistry,
@@ -926,20 +586,41 @@
                 </p>
 
                 <ul>
-                    <li>Managed interdisciplinary research on soil microbiology and crop sustainability.</li>
-                    <li>Worked on applied microbial technologies.</li>
-                    <li>Supervised students and supported teaching and laboratory activities.</li>
-                    <li>Led capacity-building workshops for smallholder farmers across rural Kenya.</li>
+
+                    <li>
+                        Managed interdisciplinary research on soil
+                        microbiology and crop sustainability.
+                    </li>
+
+                    <li>
+                        Worked on applied microbial technologies.
+                    </li>
+
+                    <li>
+                        Supervised students and supported teaching and
+                        laboratory activities.
+                    </li>
+
+                    <li>
+                        Led capacity-building workshops for smallholder
+                        farmers across rural Kenya.
+                    </li>
+
                 </ul>
 
             </div>
 
 
+
             <div class="job">
 
-                <div class="date">2018 – 2019</div>
+                <div class="date">
+                    2018 – 2019
+                </div>
 
-                <h3>Researcher — Solutions Intel Global Consultants</h3>
+                <h3>
+                    Researcher — Solutions Intel Global Consultants
+                </h3>
 
                 <p>
                     Conducted health, market, consumer and environmental
@@ -949,11 +630,16 @@
             </div>
 
 
+
             <div class="job">
 
-                <div class="date">2016 – 2018</div>
+                <div class="date">
+                    2016 – 2018
+                </div>
 
-                <h3>Managing Coordinator — Alan Keegan Farm</h3>
+                <h3>
+                    Managing Coordinator — Alan Keegan Farm
+                </h3>
 
                 <p>
                     Managed horticultural systems, ecological optimisation
@@ -969,9 +655,10 @@
 </section>
 
 
-<!-- ==============================
+
+<!-- =========================================
      EDUCATION
-============================== -->
+========================================= -->
 
 <section id="education">
 
@@ -979,37 +666,57 @@
 
         <h2>Education</h2>
 
+
         <div class="education-grid">
 
+
             <div class="education-card">
 
-                <div class="year">2024</div>
+                <div class="year">
+                    2024
+                </div>
 
-                <h3>PhD in Microbiology</h3>
+                <h3>
+                    PhD in Microbiology
+                </h3>
 
-                <p>Kenyatta University</p>
+                <p>
+                    Kenyatta University
+                </p>
 
             </div>
 
 
             <div class="education-card">
 
-                <div class="year">2013</div>
+                <div class="year">
+                    2013
+                </div>
 
-                <h3>MSc in Microbiology</h3>
+                <h3>
+                    MSc in Microbiology
+                </h3>
 
-                <p>Kenyatta University</p>
+                <p>
+                    Kenyatta University
+                </p>
 
             </div>
 
 
             <div class="education-card">
 
-                <div class="year">2010</div>
+                <div class="year">
+                    2010
+                </div>
 
-                <h3>BSc in Biology</h3>
+                <h3>
+                    BSc in Biology
+                </h3>
 
-                <p>Catholic University of Eastern Africa</p>
+                <p>
+                    Catholic University of Eastern Africa
+                </p>
 
             </div>
 
@@ -1020,163 +727,39 @@
 </section>
 
 
-<!-- ==============================
-     PUBLICATIONS
-============================== -->
 
-<section id="publications">
-
-    <div class="container">
-
-        <h2>Selected Publications</h2>
-
-        <p class="section-intro">
-            Selected peer-reviewed publications and scholarly contributions.
-            A dedicated publications page can be added as the research
-            portfolio expands.
-        </p>
-
-
-        <div class="publication">
-
-            <h3>
-                HIV-1 Genetic Diversity and Drug Resistance Mutations Among
-                Patients on Antiretroviral Therapy in Nairobi County, Kenya
-            </h3>
-
-            <p>
-                Angiro, E., Ngayo, M., Wahome, C., Mungiria, J., & Nyamache, A.
-                (2026). <em>Advances in Virology.</em>
-            </p>
-
-            <a class="doi"
-               href="https://doi.org/10.1155/av/3854108"
-               target="_blank">
-                View publication
-            </a>
-
-        </div>
-
-
-        <div class="publication">
-
-            <h3>
-                Diversity and abundance of bacterial and fungal communities
-                in rhizospheric soil from smallholder banana producing
-                agroecosystems in Kenya
-            </h3>
-
-            <p>
-                Wahome, C. N., Maingi, J. M., Ombori, O., Njeru, E. M.,
-                Muthini, M., & Kimiti, J. M. (2023).
-                <em>Frontiers in Horticulture, 2</em>, 1061456.
-            </p>
-
-            <a class="doi"
-               href="https://doi.org/10.3389/fhort.2023.1061456"
-               target="_blank">
-                View publication
-            </a>
-
-        </div>
-
-
-        <div class="publication">
-
-            <h3>
-                Response of micro-propagated tissue culture banana
-                (Musa spp.) to acclimatization using arbuscular mycorrhizal fungi
-            </h3>
-
-            <p>
-                Wahome, C., Ombori, O., Maingi, J., Njeru, E., Nchore, S.,
-                Kimiti, J., & Muthini, M. (2023).
-                <em>African Journal of Pure and Applied Sciences, 4</em>(2),
-                50–58.
-            </p>
-
-            <a class="doi"
-               href="https://doi.org/10.33886/ajpas.v4i2.410"
-               target="_blank">
-                View publication
-            </a>
-
-        </div>
-
-
-        <div class="publication">
-
-            <h3>
-                Banana Production Trends, Cultivar Diversity, and Tissue
-                Culture Technologies Uptake in Kenya
-            </h3>
-
-            <p>
-                Wahome, C. N., Maingi, J. M., Ombori, O., Kimiti, J. M.,
-                & Njeru, E. M. (2021).
-                <em>International Journal of Agronomy</em>, Article 6634046.
-            </p>
-
-            <a class="doi"
-               href="https://doi.org/10.1155/2021/6634046"
-               target="_blank">
-                View publication
-            </a>
-
-        </div>
-
-
-        <div class="publication">
-
-            <h3>
-                Microbial quality and antibiotic-resistant bacterial pathogens
-                isolated from groundwater used by residents of Ongata Rongai,
-                Kajiado North County
-            </h3>
-
-            <p>
-                Wahome, C., Okemo, P., & Nyamache, A. (2014).
-                <em>International Journal of Biological and Chemical Sciences,
-                8</em>(1), 134–143.
-            </p>
-
-            <a class="doi"
-               href="https://www.ajol.info/index.php/ijbcs/article/view/104044"
-               target="_blank">
-                View publication
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ==============================
-     RESEARCH & PUBLIC ENGAGEMENT
-============================== -->
+<!-- =========================================
+     RESEARCH & STAKEHOLDER ENGAGEMENT
+========================================= -->
 
 <section class="contributions">
 
     <div class="container">
 
-        <h2>Research, Innovation & Public Engagement</h2>
+        <h2>
+            Research, Innovation & Public Engagement
+        </h2>
 
         <p class="section-intro">
-            I actively connect research with communities, farmers,
+
+            I connect scientific research with communities, farmers,
             academic institutions and wider audiences through capacity
-            building, exhibitions, conferences and public engagement.
+            building, exhibitions, conferences, stakeholder engagement
+            and public engagement.
+
         </p>
 
 
         <div class="contribution">
 
-            <strong>November 2025</strong>
+            <strong>
+                November 2025
+            </strong>
 
             <p>
                 Delivered a workshop with smallholder farmers in Kenya
-                introducing soil biosensor use and soil health monitoring tools.
+                introducing soil biosensor use and soil health monitoring
+                tools.
             </p>
 
         </div>
@@ -1184,12 +767,14 @@
 
         <div class="contribution">
 
-            <strong>April 2025</strong>
+            <strong>
+                April 2025
+            </strong>
 
             <p>
                 Delivered an oral presentation at the Somerset public
-                engagement symposium, “(Un)earthing Soil — A Day of Exploration,”
-                Somerset House, London.
+                engagement symposium, "(Un)earthing Soil — A Day of
+                Exploration," Somerset House, London.
             </p>
 
         </div>
@@ -1197,7 +782,9 @@
 
         <div class="contribution">
 
-            <strong>2025</strong>
+            <strong>
+                2025
+            </strong>
 
             <p>
                 Soil sensor project exhibition entry at the Soil exhibition
@@ -1209,7 +796,9 @@
 
         <div class="contribution">
 
-            <strong>2019 – 2023</strong>
+            <strong>
+                2019 – 2023
+            </strong>
 
             <p>
                 Co-led three training workshops on sustainable agricultural
@@ -1223,7 +812,9 @@
 
         <div class="contribution">
 
-            <strong>2022 – 2023</strong>
+            <strong>
+                2022 – 2023
+            </strong>
 
             <p>
                 Represented Kenyatta University at national ASK Trade Fairs,
@@ -1233,40 +824,73 @@
 
         </div>
 
+
+        <a href="impact.html" class="button">
+            View Research in Action
+        </a>
+
     </div>
 
 </section>
 
 
-<!-- ==============================
-     CONFERENCE & PROFESSIONAL DEVELOPMENT
-============================== -->
+
+<!-- =========================================
+     PROFESSIONAL DEVELOPMENT
+========================================= -->
 
 <section>
 
     <div class="container">
 
-        <h2>Professional Development</h2>
+        <h2>
+            Professional Development
+        </h2>
 
         <ul class="training-list">
 
-            <li>Applied AI for Social Good — Polisync, June 2026</li>
+            <li>
+                Applied AI for Social Good — Polisync, June 2026
+            </li>
 
-            <li>Sustainability Essentials for Professionals — AimHi Earth, April 2026</li>
+            <li>
+                Sustainability Essentials for Professionals —
+                AimHi Earth, April 2026
+            </li>
 
-            <li>Sustainability Communication Workshop — AimHi Earth, March 2026</li>
+            <li>
+                Sustainability Communication Workshop —
+                AimHi Earth, March 2026
+            </li>
 
-            <li>AI for Climate Risk Modelling — Impact Hub Nairobi & Global Gateway African Union, 2025</li>
+            <li>
+                AI for Climate Risk Modelling —
+                Impact Hub Nairobi & Global Gateway African Union, 2025
+            </li>
 
-            <li>RSE Workshop on Scotland–Africa Research, 2024</li>
+            <li>
+                RSE Workshop on Scotland–Africa Research, 2024
+            </li>
 
-            <li>Our Shared Future — Africa Partnerships Workshop, University of Strathclyde, 2024</li>
+            <li>
+                Our Shared Future — Africa Partnerships Workshop,
+                University of Strathclyde, 2024
+            </li>
 
-            <li>Study Protocol I & II Certification — Global Health Network, 2022</li>
+            <li>
+                Study Protocol I & II Certification —
+                Global Health Network, 2022
+            </li>
 
-            <li>Certified Virtual Assistant, Honors — ALX & Mastercard Foundation, 2022</li>
+            <li>
+                Certified Virtual Assistant, Honors —
+                ALX & Mastercard Foundation, 2022
+            </li>
 
-            <li>Global Development Natural Resources & Livelihoods Training — SLU & KU, 2012</li>
+            <li>
+                Global Development Natural Resources & Livelihoods Training —
+                SLU & KU, 2012
+            </li>
 
         </ul>
 
@@ -1275,69 +899,80 @@
 </section>
 
 
-<!-- ==============================
+
+<!-- =========================================
      MEMBERSHIPS
-============================== -->
+========================================= -->
 
 <section class="competencies">
 
     <div class="container">
 
-        <h2>Professional Memberships</h2>
+        <h2>
+            Professional Memberships
+        </h2>
 
-        <div>
+        <span class="membership">
+            Organization for Women in Science for the Developing World
+        </span>
 
-            <span class="membership">
-                Organization for Women in Science for the Developing World
-            </span>
-
-            <span class="membership">
-                American Society for Microbiology
-            </span>
-
-        </div>
+        <span class="membership">
+            American Society for Microbiology
+        </span>
 
     </div>
 
 </section>
 
 
-<!-- ==============================
-     CONTACT
-============================== -->
 
-<section id="contact" class="contact">
+<!-- =========================================
+     CONTACT
+========================================= -->
+
+<section id="contact" class="contact-section">
 
     <div class="container">
 
-        <h2>Let's Connect</h2>
+        <h2>
+            Let's Connect
+        </h2>
 
         <p>
+
             I welcome opportunities for research collaboration,
             interdisciplinary partnerships, scientific exchange,
             stakeholder engagement and projects advancing sustainable
             and climate-resilient development.
+
         </p>
 
         <br>
 
+
         <div class="contact-grid">
+
 
             <div class="contact-card">
 
                 <p>
+
                     <strong>Email</strong><br>
 
                     <a href="mailto:wahomecaroline81@gmail.com">
                         wahomecaroline81@gmail.com
                     </a>
+
                 </p>
 
                 <br>
 
                 <p>
+
                     <strong>Phone</strong><br>
+
                     +254 725 430 613
+
                 </p>
 
             </div>
@@ -1346,21 +981,31 @@
             <div class="contact-card">
 
                 <p>
-                    <strong>Academic & Professional Profiles</strong>
+                    <strong>
+                        Academic & Professional Profiles
+                    </strong>
                 </p>
 
                 <p>
-                    <a href="https://www.linkedin.com/in/caroline-n-wahome-05395845/"
-                       target="_blank">
+
+                    <a
+                        href="https://www.linkedin.com/in/caroline-n-wahome-05395845/"
+                        target="_blank"
+                        rel="noopener">
                         LinkedIn
                     </a>
+
                 </p>
 
                 <p>
-                    <a href="https://orcid.org/0000-0002-8114-000X"
-                       target="_blank">
+
+                    <a
+                        href="https://orcid.org/0000-0002-8114-000X"
+                        target="_blank"
+                        rel="noopener">
                         ORCID
                     </a>
+
                 </p>
 
             </div>
@@ -1372,9 +1017,10 @@
 </section>
 
 
-<!-- ==============================
+
+<!-- =========================================
      FOOTER
-============================== -->
+========================================= -->
 
 <footer>
 
@@ -1390,4 +1036,5 @@
 
 
 </body>
+
 </html>
