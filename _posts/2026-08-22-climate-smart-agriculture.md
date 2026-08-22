@@ -8,7 +8,7 @@ date: 2026-08-22
 
 My understanding of climate-smart agriculture has been shaped not only by academic research but also by hands-on experience working within agricultural production systems. My experience as Managing Coordinator at Alan Keegan Farm in Ngong provided an important practical foundation for understanding how resource management, crop production, environmental stewardship and market considerations come together within a working farm.
 
-![Climate-smart agriculture](../images/climate-smart-agriculture.jpg)
+![Climate-smart agriculture]({{ '/images/climate-smart-agriculture.jpg' | relative_url }})
 
 *Hands-on engagement with sustainable agricultural production and resource management.*
 
