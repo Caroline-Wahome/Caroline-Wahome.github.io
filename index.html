@@ -1,18 +1,390 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Dr. Caroline Wahome</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dr. Caroline Wahome | Scientist & Researcher</title>
+
+    <meta name="description" content="Professional academic and research profile of Dr. Caroline Wahome.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #263238;
+            background: #ffffff;
+            line-height: 1.7;
+        }
+
+        /* Navigation */
+        nav {
+            background: #123b5d;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .logo {
+            color: white;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav ul li a:hover {
+            color: #8fd3c1;
+        }
+
+        /* Hero section */
+        .hero {
+            background: linear-gradient(135deg, #123b5d, #1f6f68);
+            color: white;
+            padding: 90px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+        }
+
+        .hero-text {
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: 23px;
+            font-weight: normal;
+            margin-bottom: 25px;
+            color: #d8f1ea;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .profile-photo {
+            width: 230px;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid white;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-right: 10px;
+            border-radius: 5px;
+            background: white;
+            color: #123b5d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #d8f1ea;
+        }
+
+        /* General sections */
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            color: #123b5d;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .intro {
+            max-width: 900px;
+        }
+
+        /* Research cards */
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .research-card {
+            background: #f4f8f7;
+            padding: 30px;
+            border-radius: 10px;
+            border-top: 4px solid #2e7d6b;
+        }
+
+        .research-card h3 {
+            color: #123b5d;
+            margin-bottom: 12px;
+        }
+
+        /* Publications */
+        .publication {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .publication strong {
+            color: #123b5d;
+        }
+
+        /* Footer */
+        footer {
+            background: #123b5d;
+            color: white;
+            text-align: center;
+            padding: 35px 8%;
+        }
+
+        footer a {
+            color: #9edbc9;
+            text-decoration: none;
+        }
+
+        /* Mobile */
+        @media (max-width: 800px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .research-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Dr. Caroline Wahome</h1>
-    <h2>Scientist | Researcher</h2>
 
-    <p>Welcome to my professional research website.</p>
+<!-- Navigation -->
+<nav>
+    <div class="logo">Dr. Caroline Wahome</div>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+
+<!-- Hero -->
+<section class="hero">
+
+    <div class="hero-text">
+
+        <h1>Dr. Caroline Wahome</h1>
+
+        <h2>Scientist | Researcher | Lecturer</h2>
+
+        <p>
+            Advancing sustainable solutions at the intersection of
+            environmental science, soil health, climate-smart agriculture
+            and ecosystem sustainability.
+        </p>
+
+        <a href="#research" class="button">Explore My Research</a>
+
+    </div>
+
+    <img src="profile%20new.png"
+         alt="Dr. Caroline Wahome"
+         class="profile-photo">
+
+</section>
+
+
+<!-- About -->
+<section id="about">
+
+    <h2>About Me</h2>
+
+    <div class="intro">
+
+        <p>
+            I am a scientist and researcher working across environmental
+            and agricultural systems with a focus on developing sustainable
+            approaches that contribute to healthy soils, resilient
+            agricultural systems and environmental sustainability.
+        </p>
+
+        <br>
+
+        <p>
+            My research interests span soil health, environmental
+            microbiology, phytoremediation, climate-smart agriculture,
+            waste valorisation and sustainable management of natural
+            resources.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- Research -->
+<section id="research">
+
+    <h2>Research Expertise</h2>
+
+    <div class="research-grid">
+
+        <div class="research-card">
+            <h3>🌱 Soil Health</h3>
+            <p>
+                Research on soil quality, soil biodiversity,
+                nutrient cycling and sustainable soil management.
+            </p>
+        </div>
+
+        <div class="research-card">
+            <h3>🌿 Phytoremediation</h3>
+            <p>
+                Exploring plant-based approaches for remediation
+                of contaminated soils and environmental restoration.
+            </p>
+        </div>
+
+        <div class="research-card">
+            <h3>🌍 Climate-Smart Agriculture</h3>
+            <p>
+                Developing sustainable agricultural approaches that
+                enhance resilience to climate change.
+            </p>
+        </div>
+
+        <div class="research-card">
+            <h3>🦠 Environmental Microbiology</h3>
+            <p>
+                Investigating microorganisms and their roles in
+                environmental processes and ecosystem health.
+            </p>
+        </div>
+
+        <div class="research-card">
+            <h3>♻️ Waste Valorisation</h3>
+            <p>
+                Exploring approaches for converting organic waste
+                into valuable resources for agriculture and
+                environmental sustainability.
+            </p>
+        </div>
+
+        <div class="research-card">
+            <h3>🐛 Soil Biodiversity</h3>
+            <p>
+                Understanding soil organisms and their contributions
+                to ecosystem functioning and soil health.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Publications -->
+<section id="publications">
+
+    <h2>Selected Publications</h2>
+
+    <div class="publication">
+
+        <p>
+            <strong>
+                Selected publications and research contributions
+            </strong>
+        </p>
+
+        <p>
+            A complete list of publications will be added here,
+            together with links to Google Scholar and other academic
+            profiles.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- Contact -->
+<section id="contact">
+
+    <h2>Contact</h2>
 
     <p>
-        This website presents my research, publications,
-        expertise and professional activities.
+        For research collaboration, academic enquiries and
+        professional opportunities, please get in touch.
     </p>
+
+    <br>
+
+    <p>
+        <strong>Email:</strong>
+        Your email address
+    </p>
+
+</section>
+
+
+<!-- Footer -->
+<footer>
+
+    <p>
+        © 2026 Dr. Caroline Wahome. All rights reserved.
+    </p>
+
+</footer>
+
 </body>
 </html>
