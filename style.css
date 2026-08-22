@@ -1,0 +1,437 @@
+/* =========================================
+   DR. CAROLINE WAHOME
+   Academic Research Website
+   Main Website Styles
+========================================= */
+
+:root {
+    --navy: #123B5D;
+    --blue: #1E5A7A;
+    --green: #2E7D6B;
+    --light-green: #EAF4F1;
+    --gold: #C89B3C;
+    --light: #F6F8F8;
+    --dark: #263238;
+    --grey: #64748B;
+    --white: #FFFFFF;
+    --border: #D9E0E3;
+}
+
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+    background: var(--white);
+    line-height: 1.7;
+}
+
+a {
+    color: var(--green);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--navy);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+section {
+    padding: 75px 0;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.3;
+}
+
+h2 {
+    color: var(--navy);
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.section-intro {
+    max-width: 850px;
+    color: var(--grey);
+    margin-bottom: 35px;
+}
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.site-nav {
+    background: var(--navy);
+    padding: 17px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+}
+
+.nav-links a {
+    color: var(--white);
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #A9DED1;
+}
+
+/* =========================================
+   PAGE HERO
+========================================= */
+
+.page-hero {
+    background: linear-gradient(
+        135deg,
+        var(--navy),
+        var(--green)
+    );
+
+    color: var(--white);
+    padding: 80px 0;
+}
+
+.page-hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.page-hero p {
+    max-width: 800px;
+    font-size: 18px;
+    color: #D8EFE9;
+}
+
+/* =========================================
+   HERO IMAGE
+========================================= */
+
+.profile-photo {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid var(--white);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* =========================================
+   RESEARCH CARDS
+========================================= */
+
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.research-card {
+    background: var(--light-green);
+    padding: 30px;
+    border-radius: 10px;
+    border-top: 4px solid var(--green);
+}
+
+.research-card h3 {
+    color: var(--navy);
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+/* =========================================
+   PROJECT CARDS
+========================================= */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 25px;
+}
+
+.project-content h3 {
+    color: var(--navy);
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   PHOTO GALLERY
+========================================= */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    background: var(--light);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.04);
+}
+
+.gallery-caption {
+    padding: 15px;
+    font-size: 14px;
+    color: var(--grey);
+}
+
+/* =========================================
+   EXPERIENCE / TIMELINE
+========================================= */
+
+.timeline {
+    border-left: 3px solid var(--green);
+    padding-left: 30px;
+}
+
+.timeline-item {
+    margin-bottom: 35px;
+}
+
+.timeline-date {
+    color: var(--green);
+    font-weight: bold;
+}
+
+.timeline-item h3 {
+    color: var(--navy);
+    margin: 5px 0;
+}
+
+/* =========================================
+   PUBLICATIONS
+========================================= */
+
+.publication {
+    margin-bottom: 28px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--border);
+}
+
+.publication h3 {
+    color: var(--navy);
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.publication .doi {
+    display: inline-block;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* =========================================
+   BLOG / INSIGHTS
+========================================= */
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.blog-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--white);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 25px;
+}
+
+.blog-content h3 {
+    color: var(--navy);
+    margin-bottom: 10px;
+}
+
+.blog-date {
+    color: var(--green);
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-section {
+    background: var(--navy);
+    color: var(--white);
+}
+
+.contact-section h2 {
+    color: var(--white);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.contact-card {
+    background: rgba(255,255,255,0.08);
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.contact-card strong {
+    color: #A9DED1;
+}
+
+.contact-card a {
+    color: #A9DED1;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.button {
+    display: inline-block;
+    padding: 12px 22px;
+    background: var(--green);
+    color: var(--white);
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background: var(--navy);
+    color: var(--white);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #0B293F;
+    color: #CBD5DB;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+}
+
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 850px) {
+
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .page-hero h1 {
+        font-size: 36px;
+    }
+
+    .research-grid,
+    .project-grid,
+    .gallery,
+    .blog-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 55px 0;
+    }
+
+}
