@@ -438,3 +438,394 @@ footer {
     }
 
 }
+/* =========================================
+   HOMEPAGE REDESIGN
+   Caroline Wahome
+========================================= */
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        var(--navy),
+        var(--blue)
+    );
+
+    color: var(--white);
+    padding: 90px 0;
+}
+
+.hero-content {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 70px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-kicker {
+    color: #A9DED1;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 54px;
+    margin-bottom: 5px;
+    color: var(--white);
+}
+
+.hero h2 {
+    font-size: 22px;
+    color: #D8EFE9;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.hero h3 {
+    font-size: 27px;
+    color: var(--white);
+    margin-bottom: 22px;
+}
+
+.hero p {
+    max-width: 720px;
+    color: #E3F0F1;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.hero .hero-intro {
+    font-size: 22px;
+    line-height: 1.5;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.hero .buttons {
+    margin-top: 25px;
+}
+
+.hero .button {
+    margin-right: 10px;
+}
+
+
+/* =========================================
+   OUTLINE BUTTON
+========================================= */
+
+.button-outline {
+    background: transparent;
+    border: 2px solid var(--white);
+}
+
+.button-outline:hover {
+    background: var(--white);
+    color: var(--navy);
+}
+
+
+/* =========================================
+   HERO PHOTO
+========================================= */
+
+.hero .profile-photo {
+    width: 290px;
+    height: 290px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+    border: 7px solid rgba(255,255,255,0.9);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.25);
+}
+
+
+/* =========================================
+   RESEARCH IDENTITY
+========================================= */
+
+.research-identity {
+    background: var(--white);
+}
+
+.research-identity .section-intro {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   FEATURED RESEARCH
+========================================= */
+
+.featured-research {
+    background: var(--light);
+}
+
+.featured-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.featured-content h2 {
+    font-size: 36px;
+}
+
+.featured-content p {
+    max-width: 750px;
+}
+
+
+/* =========================================
+   PROFILE BOX
+========================================= */
+
+.profile-box {
+    background: var(--light-green);
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 5px solid var(--green);
+}
+
+.profile-box h3 {
+    color: var(--navy);
+    margin-bottom: 20px;
+}
+
+.profile-box p {
+    margin-bottom: 8px;
+}
+
+.profile-box ul {
+    padding-left: 20px;
+}
+
+.profile-box li {
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about {
+    background: var(--white);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    gap: 55px;
+
+    align-items: start;
+}
+
+.profile-summary h2 {
+    font-size: 36px;
+}
+
+.profile-summary p {
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   RESEARCH IN ACTION
+========================================= */
+
+.impact-preview {
+    background: var(--light-green);
+}
+
+.impact-preview .research-card {
+    background: var(--white);
+}
+
+
+/* =========================================
+   PUBLICATIONS PREVIEW
+========================================= */
+
+.publications-preview {
+    background: var(--white);
+}
+
+.publications-preview .research-card {
+    background: var(--light);
+    border-top: 4px solid var(--gold);
+}
+
+.publications-preview .research-card a {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   INSIGHTS PREVIEW
+========================================= */
+
+.insights-preview {
+    background: var(--light-green);
+}
+
+.insights-preview .profile-box {
+    background: var(--white);
+    border-left: 5px solid var(--gold);
+}
+
+.insights-preview .profile-box h3 {
+    font-size: 23px;
+}
+
+
+/* =========================================
+   HOMEPAGE SECTIONS
+========================================= */
+
+.research-identity,
+.featured-research,
+.about,
+.impact-preview,
+.publications-preview,
+.insights-preview {
+    padding: 80px 0;
+}
+
+
+/* =========================================
+   CARD HOVER EFFECT
+========================================= */
+
+.research-card {
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.research-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.07);
+}
+
+
+/* =========================================
+   MOBILE HOMEPAGE
+========================================= */
+
+@media (max-width: 850px) {
+
+    .hero {
+        padding: 65px 0;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero h3 {
+        font-size: 23px;
+    }
+
+    .hero .hero-intro {
+        font-size: 19px;
+    }
+
+    .hero .profile-photo {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .featured-content,
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .featured-content h2,
+    .profile-summary h2 {
+        font-size: 30px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero h3 {
+        font-size: 20px;
+    }
+
+    .hero .hero-intro {
+        font-size: 18px;
+    }
+
+    .hero .profile-photo {
+        width: 185px;
+        height: 185px;
+    }
+
+    .hero .button {
+        display: block;
+        margin: 10px auto;
+        width: fit-content;
+    }
+
+    .research-identity,
+    .featured-research,
+    .about,
+    .impact-preview,
+    .publications-preview,
+    .insights-preview {
+        padding: 55px 0;
+    }
+
+}
