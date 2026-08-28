@@ -829,3 +829,155 @@ footer {
     }
 
 }
+```css
+/* =========================================
+   IMPACT PAGE
+========================================= */
+
+.hero-kicker {
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.impact-section {
+    background: var(--white);
+}
+
+.impact-section:nth-of-type(even) {
+    background: var(--light);
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.impact-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.impact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.09);
+}
+
+.impact-year {
+    display: inline-block;
+    color: var(--green);
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+.impact-category {
+    display: inline-block;
+    color: var(--grey);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.impact-card h3 {
+    color: var(--navy);
+    font-size: 21px;
+    margin: 15px 0;
+}
+
+.impact-card p {
+    color: var(--grey);
+    margin-bottom: 12px;
+}
+
+.impact-location {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--green) !important;
+}
+
+.feature-card {
+    border-top: 4px solid var(--gold);
+}
+
+.engagement-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.engagement-card {
+    background: var(--light-green);
+    padding: 25px;
+    border-radius: 10px;
+    border-top: 4px solid var(--green);
+}
+
+.engagement-card h3 {
+    color: var(--navy);
+    margin-bottom: 10px;
+}
+
+.engagement-card p {
+    color: var(--grey);
+    font-size: 15px;
+}
+
+.research-journey {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 700px;
+    margin: 40px auto 0;
+}
+
+.research-journey div {
+    width: 100%;
+    text-align: center;
+    padding: 18px;
+    background: var(--light-green);
+    border-radius: 8px;
+    color: var(--navy);
+    border-left: 4px solid var(--green);
+}
+
+.research-journey span {
+    color: var(--gold);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@media (max-width: 850px) {
+
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .engagement-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .engagement-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .impact-card {
+        padding: 22px;
+    }
+
+}
+```
