@@ -1152,3 +1152,89 @@ footer {
 
 }
 ```
+/* Insight Article */
+
+.insight-article {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.insight-hero-image {
+    margin: 0 0 45px;
+}
+
+.insight-hero-image img {
+    width: 100%;
+    max-height: 650px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+.insight-content {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.insight-content p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1.4rem;
+}
+
+.insight-content .lead {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #123B5D;
+}
+
+.insight-content h2 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: #123B5D;
+}
+
+.insight-image {
+    margin: 40px 0;
+}
+
+.insight-image img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: contain;
+    display: block;
+    border-radius: 10px;
+}
+
+.insight-article figcaption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #64748B;
+    font-style: italic;
+    text-align: center;
+}
+
+.insight-highlight {
+    padding: 20px 25px;
+    margin: 30px 0;
+    background: #EAF4F1;
+    border-left: 4px solid #2E7D6B;
+    border-radius: 6px;
+    color: #263238;
+}
+
+@media (max-width: 850px) {
+
+    .insight-content p {
+        font-size: 1rem;
+    }
+
+    .insight-content h2 {
+        margin-top: 2.2rem;
+    }
+
+    .insight-hero-image img {
+        max-height: 500px;
+    }
+
+}
